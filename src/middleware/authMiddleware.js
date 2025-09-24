@@ -5,7 +5,7 @@ export const verifyToken = (req, res, next) => {
   const token = authHeader && authHeader.split(" ")[1]; // Bearer <token>
 
   if (!token) {
-    return res.status(401).json({ message: "Token no proporcionado" });
+    return res.status(401).json({ message: "No cuenta con una autenticación valida" });
   }
 
   try {
