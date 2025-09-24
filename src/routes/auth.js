@@ -1,3 +1,4 @@
+// Este archivo corresponde  a la ruta de autenticación de la API algo mas privado
 import { Router } from "express";
 import { registerAdmin, login } from "../controllers/auth_controller.js";
 import { verifyToken, isAdmin } from "../middleware/authMiddleware.js";

@@ -1,3 +1,4 @@
+// Este archivo la ruta de los usuarios, es en donde se definen las entradas de acceso a los recursos
 import { Router } from "express";
 import {
   getUsuarios,

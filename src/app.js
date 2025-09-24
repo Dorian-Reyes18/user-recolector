@@ -30,9 +30,8 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use("/api", routes);
-app.use("/api/auth", authRoutes);
-app.use("/api/usuarios", verifyToken, isAdmin, usuariosSystem);
+app.use("/api", routes); // acceso general incluyendo los endpoints publicos
+app.use("/api/auth", authRoutes); // acceso a endpoints de autenticación y registro
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
